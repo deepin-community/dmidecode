@@ -1,3 +1,9 @@
+dmidecode (3.5-3deepin1) unstable; urgency=medium
+
+  * Add mips64el.
+
+ -- lichenggang <lichenggang@deepin.org>  Mon, 06 Jan 2025 09:51:17 +0800
+
 dmidecode (3.5-3) unstable; urgency=medium
 
   * Add loong64 to architecture list (Closes: #1050154).
