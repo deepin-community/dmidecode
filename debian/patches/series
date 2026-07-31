@@ -14,3 +14,4 @@
 #0155-use_read_file.patch
 #0160-HPE_OEM_Firmware_change.patch
 0600-Fix-groff-error.patch
+uniontech-support-lpddr5x.patch

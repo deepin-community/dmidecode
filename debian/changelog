@@ -1,3 +1,9 @@
+dmidecode (3.6-2deepin2) unstable; urgency=medium
+
+  * Support lpddr5x.
+
+ -- xinpeng.wang <wangxinpeng@uniontech.com>  Fri, 31 Jul 2026 10:41:14 +0800
+
 dmidecode (3.6-2deepin1) unstable; urgency=medium
 
   * Add mips64el.
