@@ -1,0 +1,13 @@
+Index: deepin-dmidecode/dmidecode.c
+===================================================================
+--- deepin-dmidecode.orig/dmidecode.c
++++ deepin-dmidecode/dmidecode.c
+@@ -2845,7 +2845,7 @@ static const char *dmi_memory_device_typ
+ 		"DDR",
+ 		"DDR2",
+ 		"DDR2 FB-DIMM",
+-		"Reserved",
++		"LPDDR5x",
+ 		"Reserved",
+ 		"Reserved",
+ 		"DDR3",
