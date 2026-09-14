@@ -2,7 +2,7 @@
  * BIOS Decode
  *
  *   Copyright (C) 2000-2002 Alan Cox <alan@redhat.com>
- *   Copyright (C) 2002-2017 Jean Delvare <jdelvare@suse.de>
+ *   Copyright (C) 2002-2025 Jean Delvare <jdelvare@suse.de>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -111,8 +111,8 @@ static int smbios3_decode(const u8 *p, size_t len)
 		p[0x07], p[0x08], p[0x09]);
 	printf("\tStructure Table Maximum Length: %u bytes\n",
 		DWORD(p + 0x0C));
-	printf("\tStructure Table 64-bit Address: 0x%08X%08X\n",
-		QWORD(p + 0x10).h, QWORD(p + 0x10).l);
+	printf("\tStructure Table 64-bit Address: 0x%016llX\n",
+		QWORD(p + 0x10));
 
 	return 1;
 }
@@ -284,8 +284,8 @@ static int acpi_decode(const u8 *p, size_t len)
 
 	if (DWORD(p + 20) < 32) return 1;
 
-	printf("\tXSD Table 64-bit Address: 0x%08X%08X\n",
-		QWORD(p + 24).h, QWORD(p + 24).l);
+	printf("\tXSD Table 64-bit Address: 0x%016llX\n",
+		QWORD(p + 24));
 
 	return 1;
 }
