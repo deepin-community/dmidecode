@@ -1,15 +1,21 @@
-dmidecode (3.6-2deepin2) unstable; urgency=medium
+dmidecode (3.7-1) unstable; urgency=medium
 
-  * Support lpddr5x.
+  * New upstream release.
+    - Refresh patches.
+    - Remove not longer used patches:
+      + debian/patches/0100-ansi-c.patch
+      + debian/patches/Fix-groff-error.patch
+  * debian/copyright:
+    - Add year 2026 to myself.
+    - Rebase to the new release.
+  * Declare compliance with Debian Policy 4.7.3.0 (No changes needed).
+  * debian/control:
+    - Remove redundant Priority field.
+    - Remove redundant Rules-Requires-Root field.
+  * New debian/patches/0605-man.patch (Closes: #1088088)
+  * Remove old patches.
 
- -- xinpeng.wang <wangxinpeng@uniontech.com>  Fri, 31 Jul 2026 10:41:14 +0800
-
-dmidecode (3.6-2deepin1) unstable; urgency=medium
-
-  * Add mips64el.
-  * feat: add sw64 support.
-
- -- tunaichao <tunaichao@uniontech.com>  Thu, 12 Mar 2026 10:30:52 +0800
+ -- Jörg Frings-Fürst <debian@jff.email>  Tue, 10 Mar 2026 11:52:04 +0100
 
 dmidecode (3.6-2) unstable; urgency=medium
 
